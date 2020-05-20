@@ -126,13 +126,14 @@ public class MemberDAO {
 			 con = getConnection();
 			 sql = "update hojin set id=?, passwd=?, name=?, email=?, address=? where id=?";
 			 pstmt = con.prepareStatement(sql);
-			 //?값 설정 
-			 pstmt.setString(1, memberBean.getId());
-			 pstmt.setString(2, memberBean.getPasswd());
-			 pstmt.setString(3, memberBean.getName());
-			 pstmt.setString(4, memberBean.getEmail());
-			 pstmt.setString(5, memberBean.getAddress());
-			 pstmt.setString(6, id);
+			 pstmt.setString(1,memberBean.getId());
+			 
+			 pstmt.setString(2,memberBean.getPasswd());
+			 pstmt.setString(3,memberBean.getName());
+			 pstmt.setString(4,memberBean.getEmail());
+			 pstmt.setString(5,memberBean.getAddress());
+			 pstmt.setString(6,id);
+			 
 			 pstmt.executeUpdate();	//update 실행 
 		 }catch(Exception e) {
 			 System.out.println("updateMember메소드 내부에서 예외발생 : " + e.toString());

@@ -9,8 +9,7 @@
 <html>
 	<head>
 		<title>Giants 커뮤니티게시판</title>
-		 <meta charset="UTF-8">
-   		 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
 		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
@@ -33,14 +32,14 @@
 					<div id="header" class="skel-panels-fixed">
 						<div id="logo">
 							<h1><a href="index.jsp">Giants</a></h1>
-							<span class="tag">커뮤니티 게시판</span>
+							<span class="tag">커뮤니티게시판</span>
 						</div>
 						<nav id="nav">
 							<ul>
 								<li class="active"><a href="index.jsp">Homepage</a></li>
 								<li><a href="left-sidebar.html">Left Sidebar</a></li>
 								<li><a href="right-sidebar.html">Right Sidebar</a></li>
-								<li><a href="no-sidebar.html">No Sidebar</a></li>
+								<li><a href="board.jsp">커뮤니티 게시판</a></li>
 								<%
 									if("".equals(session.getAttribute("id")) || session.getAttribute("id") == null){
 							

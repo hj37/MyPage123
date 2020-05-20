@@ -6,12 +6,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--     <meta name="viewport" content="width=device-width, initial-scale=1"> -->
     <!-- 위 3개의 메타 태그는 *반드시* head 태그의 처음에 와야합니다; 어떤 다른 콘텐츠들은 반드시 이 태그들 *다음에* 와야 합니다 -->
     <title>로그인 화면</title>
 
     <!-- 부트스트랩 -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+<!--     <link href="css/bootstrap.min.css" rel="stylesheet"> -->
 
     <!-- IE8 에서 HTML5 요소와 미디어 쿼리를 위한 HTML5 shim 와 Respond.js -->
     <!-- WARNING: Respond.js 는 당신이 file:// 을 통해 페이지를 볼 때는 동작하지 않습니다. -->
@@ -72,7 +72,7 @@
 								<li class="active"><a href="index.jsp">Homepage</a></li>
 								<li><a href="left-sidebar.html">Left Sidebar</a></li>
 								<li><a href="right-sidebar.html">Right Sidebar</a></li>
-								<li><a href="no-sidebar.html">No Sidebar</a></li>
+								<li><a href="board.jsp">커뮤니티 게시판</a></li>
 								<%
 									if("".equals(session.getAttribute("id")) || session.getAttribute("id") == null){
 							
@@ -110,6 +110,8 @@
 								<input class="id" type="text" name="id"  placeholder="ID"/>	<br>
 								<input type="button" value="ID_CHECK" class="button alt" onclick="winopen()"><br>			
 							</div>
+							
+							
 						</div>
 						<div class="row half">
 							<div class="12u">
